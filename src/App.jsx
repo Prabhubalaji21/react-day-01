@@ -1,28 +1,18 @@
-//our first react component
-//javascript function
-//for now it does not receive any arguements
-const Hello = ( ) => {
+import './app.css';
+const Hello = (props) => {
   return(
     <div>
-      <p>Hello everyone...!!!</p>
+      <p>Hello {props.name}, your age is {props.age}</p>
     </div>
   )
 }
 const App = () => {
-  // const now = new Date();
-  // const a=10;
-  // const b=20;
-
-  // console.log(now, a+b);
-  // //it can also execute or contain javascript
-  // console.log('Hello from component App');
-
-  //returns a html
-  //dynamic content ah print pannalam example:- date and time
 return(
   <div>
     <h1>Greetings </h1>
-    <Hello />
+    <Hello name='Prabhu' age ='26'/>
+    <Hello name='Balaji' age ='23'/>
+    <Hello name='Daniel' age ='20'/>
   
   </div>
 )
