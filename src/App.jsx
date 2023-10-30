@@ -23,10 +23,7 @@ return(
   <div>
     <h1>Greetings </h1>
     <Hello />
-    <Hello />
-    <Hello />
-    <Hello />
-    <Hello />
+  
   </div>
 )
 }
